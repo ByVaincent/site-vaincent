@@ -17,12 +17,12 @@
         
 
         <ul class="menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="biographie.html">Biographie</a></li>
-            <li><a href="au-jour-le-jour.html">Au jour le jour</a></li>
-            <li><a href="concerts.html">Concerts</a></li>
-            <li><a href="evenements-privés.html">Événements privés</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="biographie.php">Biographie</a></li>
+            <li><a href="au-jour-le-jour.php">Au jour le jour</a></li>
+            <li><a href="concerts.php">Concerts</a></li>
+            <li><a href="evenements-privés.php">Événements privés</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
 
         <div class="reseaux">
