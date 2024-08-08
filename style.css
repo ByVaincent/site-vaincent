@@ -52,6 +52,7 @@ header{
     justify-content: space-around;
     align-items: center;
     margin:0.5em 1.5em;
+    
 }
 
 #logo {
@@ -147,7 +148,7 @@ padding: 0em 1.5em;
     justify-content: top;
     align-items: center;
     padding: 0em 0em;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.5s ease;
     
     
@@ -186,6 +187,9 @@ padding: 0em 1.5em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60%;
+   
+ 
 }
 .accueil-texte img {
 
@@ -207,12 +211,16 @@ padding: 0em 1.5em;
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    align-items: right;
+    width: 40%;
+    
+
 }
 
 #accueil-photo-vaincent {
 
-    height: 95%;
+
 
   
     
@@ -220,6 +228,7 @@ padding: 0em 1.5em;
 
 #logo-page-accueil {
     width: 100%;
+   
 }
 
 
@@ -253,11 +262,59 @@ padding: 0em 1.5em;
         transition: all 0.3s ease;
 
     }
+    
+    .photo-accueil {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+        width: 40%;
+        display: none;
+        
+    
+    }
+
+    .accueil-texte {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        
+       
+     
+    }
+
+    .main-accueil{
+
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0em -2em 0em 2em;
+        max-width: 2000px;
+        background-image: url(img/page-accueil-vaincent.png);
+    
+    }
+
+
+     
+       
+         
+     
 
 }
 
 
 @media (max-width: 600px){
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin:0.5em 1.5em;
+    }
 
     #logo {
         width: 8em;
@@ -297,4 +354,41 @@ padding: 0em 1.5em;
 
         display: none;
     }
+
+    .photo-accueil {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+        width: 40%;
+        display: none;
+        
+    
+    }
+
+    .accueil-texte {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        
+       
+     
+    }
+
+    .main-accueil{
+
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0em -2em 0em 2em;
+        max-width: 2000px;
+        background-image: url(img/page-accueil-vaincent.png);
+        background-position: top center;
+    
+    }
+
 }

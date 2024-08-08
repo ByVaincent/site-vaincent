@@ -21,16 +21,16 @@
 
 <body>
 
-    <section class="container">
+    <main class="container">
     <?php require "header.php" ?>
 
-        <main class="main-accueil">
+        <section class="main-accueil">
 
-            <div class="photo-accueil">
+            <figure class="photo-accueil">
 
                 <img id="accueil-photo-vaincent" src="img/page-accueil-vaincent.png" alt="Photo de Vaincent">
 
-            </div>
+            </figure>
            
             <article class="accueil-texte">
 
@@ -45,8 +45,8 @@
                 
             </article>
 
-        </main>
-
 </section>
+
+</main>
 </body>
 </html>
