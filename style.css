@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Red Hat Display";
+
+    
+
+    
+}
+
+h1 {
+    
+}
+
+.container {
+    
+    background: url(img/page-accueil-fond.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    
+}
+
+a {
+    color: white;
+}
+
+
+/* Header */
+
+header{
+    
+    max-width: 1500px;
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin:0.5em 1.5em;
+}
+
+#logo {
+    width: 10em;
+    height: auto;
+    transition: transform 0.3s ease;
+    }
+
+    #logo:hover {
+        transform: scale(1.1);
+    }
+
+    /* Navigation  */
+header ul {
+    list-style-type: none;
+    /* text-align: center;
+    vertical-align: center; */
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+header li {
+text-align: center;
+display: inline-block;
+padding: 0em 1.5em;
+  
+}
+
+.reseaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logos-reseaux{
+    width: 1.5em;
+    height: auto;
+    margin: auto 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.logos-reseaux:hover {
+    transform: scale(1.2);
+}
+
+#logo-facebook {
+ width: 0.75em;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1em;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.menu a:hover {
+
+    transform: scale(1.2);
+ 
+}
+
+
+/* Navigation mobile et tablettes */
+.menu-mobile-hamburger {
+
+    display: none;
+}
+
+.bar {
+    width: 35px;
+    height: 2px;
+    margin: 3px 0px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+#logo-mobile {
+
+    display: none;
+}
+
+.menu-mobile {
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 0em 0em;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    
+    
+  
+    
+}
+.menu-mobile li {
+    text-align: center;
+    margin: 0.5em 0em;
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+/* Page d'accueil */
+
+.main-accueil{
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0em -2em 0em 2em;
+    max-width: 1500px;
+
+}
+
+.accueil-texte {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accueil-texte img {
+
+    margin: 2em 0em;
+}
+
+.accueil-texte h1 {
+
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.accueil-texte p {
+    text-align: center;
+
+}
+
+.photo-accueil {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#accueil-photo-vaincent {
+
+    height: 95%;
+
+  
+    
+}
+
+#logo-page-accueil {
+    width: 100%;
+}
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+
+    #logo {
+        width: 8em;
+    }
+
+    .menu-mobile-hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .affichage-menu-mobile {
+
+        padding: 1em 0em;
+        max-height: 100%;
+        transition: all 1s ease;
+        
+    
+    }
+
+    .burger-in-use {
+       
+        margin: 0px 0px;
+        transition: all 0.3s ease;
+
+    }
+
+}
+
+
+@media (max-width: 600px){
+
+    #logo {
+        width: 8em;
+    }
+
+    .menu-mobile-hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .affichage-menu-mobile {
+
+        padding: 1em 0em;
+        max-height: 100%;
+        transition: all 1s ease;
+        
+    
+    }
+
+    .burger-in-use {
+       
+        margin: 0px 0px;
+        transition: all 0.3s ease;
+
+    }
+
+    #logo-mobile {
+
+        display: block;
+    }
+
+    #logo {
+
+        display: none;
+    }
+}
