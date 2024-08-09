@@ -34,8 +34,7 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     width: 1920px;
-    
-    
+    text-align: center;
 }
 
 a {
@@ -183,8 +182,9 @@ padding: 0em 1.5em;
 .container-accueil-1 {
 
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     max-width: 1500px;
+    padding: 2em 0em;
 
 }
 
@@ -195,9 +195,13 @@ padding: 0em 1.5em;
     justify-content: center;
     align-items: center;
     width: 60%;
-   
- 
 }
+
+.accueil-texte-responsive {
+
+    display: none;
+}
+
 .accueil-texte img {
 
     margin: 2em 0em;
@@ -219,23 +223,24 @@ padding: 0em 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     width: 40%;
-    
-
 }
 
 #accueil-photo-vaincent {
   
-    width: 450px;
-    
-    
+    width: 450px;  
 }
 
 #logo-page-accueil {
     width: 100%;
     padding-left: 2em;
    
+}
+
+#logo-page-accueil-responsive {
+    width: 70%;
+    display: none;
 }
 
 
@@ -293,44 +298,69 @@ padding: 0em 1.5em;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: right;
-        width: 40%;
-        display: none;
-        
-    
+        align-items: start;
+        width: 50%;
+    }
+
+    #accueil-photo-vaincent {
+  
+        width: 100%;  
     }
 
     .accueil-texte {
+        display: none;
+    }
+
+    .accueil-texte-responsive {
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.3);
-        
-       
-     
+        width: 50%;
+        position: relative;
+        z-index: 2;
+        margin-left: 2em;
+        margin-right: -2em;
+        text-align: center;
+
     }
 
-    .main-accueil{
+    .accueil-texte-responsive p{
 
+        margin: 0.3em 0em;
+    }
+
+    .accueil-texte-responsive h1{
+
+        margin: 1em 0em;
+        font-size: 2em;
+    }
+
+    #logo-page-accueil {
+
+        display: none;
+    }
+
+    #logo-page-accueil-responsive {
+        width: 50%;
         display: flex;
-        flex-direction: row-reverse;
-        margin: 0em -2em 0em 2em;
-        max-width: 2000px;
-        background-image: url(img/page-accueil-vaincent.png);
-    
+        padding-left: 5em;
     }
 
-
-     
-       
-         
-     
+    .accueil {
+    
+        background: url(img/page-accueil-fond.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 200%;  
+    } 
 
 }
-
+/* Mobiles */
 
 @media (max-width: 600px){
     .header-nav {
@@ -339,6 +369,7 @@ padding: 0em 1.5em;
         justify-content: space-between;
         align-items: center;
         margin:0.5em 1.5em;
+        
     }
 
     #logo {
@@ -385,11 +416,9 @@ padding: 0em 1.5em;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: right;
+        align-items: start;
         width: 40%;
-        display: none;
-        
-    
+       
     }
 
     .accueil-texte {
@@ -399,21 +428,59 @@ padding: 0em 1.5em;
         justify-content: center;
         align-items: center;
         width: 100%;
-        background: rgba(0, 0, 0, 0.3);
-        
-       
-     
+        position: relative;
+        z-index: 2;
+        display: none;
     }
 
-    .main-accueil{
+    .accueil-texte-responsive {
 
         display: flex;
-        flex-direction: row-reverse;
-        margin: 0em -2em 0em 2em;
-        max-width: 2000px;
-        background-image: url(img/page-accueil-vaincent.png);
-        background-position: top center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        margin-left: 1em;
+        margin-right: -2em;
+        text-align: center;
+
+    }
+
+    .accueil-texte-responsive p{
+
+        margin: 0.3em 0em;
+    }
+
+    .accueil-texte-responsive h1{
+
+        margin: 1em 0em;
+        font-size: 2em;
+    }
+
+    #logo-page-accueil {
+        width: 100%;
+        padding-left: 2em;
+        display: none;
+       
+    }
+
+    #logo-page-accueil-responsive {
+        width: 70%;
+        display: flex;
+        padding-left: 3em;
+    }
+
+    .accueil {
     
+        background: url(img/page-accueil-fond.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 300%;  
     }
 
 }

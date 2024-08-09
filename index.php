@@ -30,12 +30,6 @@
     <section class="accueil">
 
         <div class="container-accueil-1">
-
-            <figure class="photo-accueil">
-
-                <img id="accueil-photo-vaincent" src="img/page-accueil-vaincent.png" alt="Photo de Vaincent">
-
-            </figure>
             
             <article class="accueil-texte">
 
@@ -49,6 +43,27 @@
                 <p>Vainqueur du concours internationnal Le Tremplin Des Étoiles 2022</p>
                     
             </article>
+
+            <article class="accueil-texte-responsive">
+
+                <figure>
+                    <img src="img/logo-vaincent-ecriture.png" alt="Logo de Vaincent" id="logo-page-accueil">
+                    <img src="img/logo-vaincent-v.svg" alt=" de Vaincent" id="logo-page-accueil-responsive">
+                </figure>
+
+                <h1>Ténor Opéra - Pop</h1>
+
+                <p>Vainqueur du concours Georges Enesco 2023 (catégorie grands amateurs)</p>
+                <p>Vainqueur du concours Les Cordes Aux Voix 2022</p>
+                <p>Vainqueur du concours internationnal Le Tremplin Des Étoiles 2022</p>
+                    
+            </article>
+
+            <figure class="photo-accueil">
+
+                <img id="accueil-photo-vaincent" src="img/page-accueil-vaincent.png" alt="Photo de Vaincent">
+
+            </figure>
             
         </div>    
 
