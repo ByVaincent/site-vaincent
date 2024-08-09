@@ -31,8 +31,11 @@
 
         <div class="container-accueil-1">
             
+        
+
             <article class="accueil-texte">
 
+                <!-- Affichage ordinateur -->
                 <figure>
                     <img src="img/logo-vaincent-ecriture.png" alt="Logo de Vaincent" id="logo-page-accueil">
                 </figure>
@@ -43,19 +46,29 @@
                 <p>Vainqueur du concours internationnal Le Tremplin Des Étoiles 2022</p>
                     
             </article>
-
+            
+            <!-- Affichage tablette -->
             <article class="accueil-texte-responsive">
 
                 <figure>
-                    <img src="img/logo-vaincent-ecriture.png" alt="Logo de Vaincent" id="logo-page-accueil">
                     <img src="img/logo-vaincent-v.svg" alt=" de Vaincent" id="logo-page-accueil-responsive">
                 </figure>
+
 
                 <h1>Ténor Opéra - Pop</h1>
 
                 <p>Vainqueur du concours Georges Enesco 2023 (catégorie grands amateurs)</p>
                 <p>Vainqueur du concours Les Cordes Aux Voix 2022</p>
                 <p>Vainqueur du concours internationnal Le Tremplin Des Étoiles 2022</p>
+                    
+            </article>
+
+            <article class="accueil-texte-responsive-mobile">
+
+                <figure>
+                    <img src="img/logo-vaincent-v.svg" alt=" de Vaincent" id="logo-page-accueil-responsive">
+                </figure>
+
                     
             </article>
 
@@ -63,9 +76,19 @@
 
                 <img id="accueil-photo-vaincent" src="img/page-accueil-vaincent.png" alt="Photo de Vaincent">
 
-            </figure>
+            </figure> 
             
-        </div>    
+        </div>   
+        
+        <div class="accueil-texte-responsive-mobile-texte">
+
+            <h1>Ténor Opéra - Pop</h1>
+
+            <p>Vainqueur du concours Georges Enesco 2023 (catégorie grands amateurs)</p>
+            <p>Vainqueur du concours Les Cordes Aux Voix 2022</p>
+            <p>Vainqueur du concours internationnal Le Tremplin Des Étoiles 2022</p>
+
+        </div>
 
     </section>
 
