@@ -5,12 +5,19 @@
 
 
 body {
-    background-color: black;
+    background-color: #00031C;
     color: white;
     font-family: "Red Hat Display";
-
+    display: flex;
+    justify-content: center;
+    width: 100%;
     
+}
 
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     
 }
 
@@ -18,15 +25,16 @@ h1 {
     
 }
 
-.container-accueil {
+.accueil {
     
-    background: url(img/page-accueil-fond.jpg) no-repeat fixed;
+    background: url(img/page-accueil-fond.jpg) no-repeat ;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 100vh;
+    width: 1920px;
+    
     
 }
 
@@ -172,7 +180,7 @@ padding: 0em 1.5em;
 
 /* Page d'accueil */
 
-.main{
+.container-accueil-1 {
 
     display: flex;
     flex-direction: row-reverse;
