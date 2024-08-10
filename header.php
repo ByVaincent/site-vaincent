@@ -32,7 +32,7 @@
 
         </div>
     </div>   
-    
+    <div class="container-menu-mobile">
         <ul class="menu-mobile">
             <li><a href="index.php">Accueil</a></li>
             <li><a href="biographie.php">Biographie</a></li>
@@ -41,6 +41,6 @@
             <li><a href="evenements-privés.php">Événements privés</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
-
+    </div>
 
 </header>
