@@ -27,7 +27,7 @@
     <?php require "header.php" ?>
 
 
-    <section class="accueil">
+    <section class="accueil-section-1">
 
         <div class="container-accueil-1">
             
@@ -88,6 +88,24 @@
             <p>Vainqueur du concours Les Cordes Aux Voix 2022</p>
             <p>Vainqueur du concours internationnal Le Tremplin Des Étoiles 2022</p>
 
+        </div>
+
+    </section>
+
+    <section class="accueil-video">
+
+        <div class="container">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tq9Z7S9kpu8?si=tFQzkzFCXOzYGjcv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <article>
+
+                <h2>Vaincent en concert</h2>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam modi temporibus, cum ex enim non explicabo deleniti illo deserunt aut, voluptate, excepturi quos dignissimos saepe nesciunt repellat beatae. Est, dolor.</p>
+
+
+            </article>
         </div>
 
     </section>

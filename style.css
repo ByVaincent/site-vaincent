@@ -22,8 +22,37 @@ main {
     
 }
 
+section {
+    
+    background: radial-gradient(ellipse at center, #00073F, #000000);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 1920px;
+    padding: 2em 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0em 2em;
+}
+
+
 h1 {
     text-align: center;
+}
+
+h2 {
+
+    margin-bottom: 1em;
 }
 
 
@@ -54,9 +83,7 @@ header{
     justify-content: space-around;
     align-items: center;
     padding:0.5em 1.5em 0em 1.5em;
-    width: 100%;
-    
-    
+    width: 100%; 
 }
 
 #logo {
@@ -176,15 +203,11 @@ padding: 0em 1.5em;
 
 /* Page d'accueil */
 
-.accueil {
+.accueil-section-1 {
     
     background: url(img/page-accueil-fond.jpg) no-repeat ;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    max-width: 1920px;
-   
-
 }
 
 .container-accueil-1 {
@@ -263,6 +286,25 @@ padding: 0em 1.5em;
     display: none;
 }
 
+/* Accueil section 2 */
+
+.accueil-video div iframe {
+
+    width: 50%;
+    margin: 2em 2em;
+    
+}
+
+.accueil-video div article {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
 /* Page Biographie */
 
 .container-biographie {
@@ -282,6 +324,8 @@ padding: 0em 1.5em;
 /* Médias queries */
 
 @media (min-width: 600px) and (max-width: 1000px) {
+
+    /* Nav tablette */
 
     #logo {
         width: 8em;
@@ -311,6 +355,41 @@ padding: 0em 1.5em;
         transition: all 0.3s ease;
 
     }
+
+    /* Global tablette */
+
+    section {
+    
+        background: radial-gradient(ellipse at center, #00073F, #000000);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        max-width: 1920px;
+        padding: 2em 0em;
+    }
+
+    .container {
+        max-width: 1500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0em 2em;
+    }
+
+    /* Accueil section 1 tablette */
+    
+    .accueil-section-1 {
+    
+        background: url(img/page-accueil-fond.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;  
+    } 
     
     .photo-accueil {
 
@@ -367,21 +446,40 @@ padding: 0em 1.5em;
         padding-left: 5em;
     }
 
-    .accueil {
+    /* Accueil section 2 tablettes */
+
+.accueil-video div iframe {
+
+    width: 80%;
+    margin: 2em 2em;
     
-        background: url(img/page-accueil-fond.jpg) no-repeat ;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;  
-    } 
+}
+
+.accueil-video div article {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 }
 /* Mobiles */
 
 @media (max-width: 600px){
+
+    /* nav mobile */
+
+    .header-nav {
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:0.5em 1.5em 0em 1.5em;
+        width: 100%; 
+    }
+
     #logo {
         width: 8em;
     }
@@ -410,6 +508,43 @@ padding: 0em 1.5em;
         transition: all 0.3s ease;
 
     }
+
+    /* Global mobile */
+
+    section {
+    
+        background: radial-gradient(ellipse at center, #00073F, #000000);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        max-width: 1920px;
+        padding: 2em 0em;
+    
+    }
+
+    .container {
+        max-width: 1500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0.2em;
+    }
+
+    /* Accueil section 1 mobile */
+
+    .accueil-section-1 {
+    
+        background: url(img/page-accueil-fond.jpg) no-repeat ;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;  
+        padding: 2em 0.2em;
+    } 
     
     .photo-accueil {
 
@@ -480,15 +615,22 @@ padding: 0em 1.5em;
         padding-left: 20%;
     }
 
-    .accueil {
+
+        /* Accueil section 2 mobile */
+
+.accueil-video div iframe {
+
+    width: 100%;
+    margin: 2em 2em;
     
-        background: url(img/page-accueil-fond.jpg) no-repeat ;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;  
-    } 
+}
+
+.accueil-video div article {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 }
