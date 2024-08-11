@@ -53,9 +53,19 @@ h1 {
 h2 {
 
     margin-bottom: 1em;
+    text-align: center;
 }
 
+h3 {
 
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+p {
+    text-align: center;
+}
 
 a {
     color: white;
@@ -207,6 +217,16 @@ padding: 0em 1.5em;
     font-size: 1.2em;
 }
 
+
+/*  Footer */
+
+.section-footer div {
+    margin: 0% 10%;
+}
+
+#h3-reseaux {
+    margin-bottom: 1em;
+}
 
 /* Page d'accueil */
 
@@ -571,6 +591,23 @@ padding: 0em 1.5em;
         justify-content: center;
         align-items: center;
         padding: 2em 0.2em;
+    }
+
+    /* Footer mobile */
+
+    .section-footer div {
+        margin: 5% 0%;
+    }
+    
+    
+    .container-footer-mobile {
+
+        margin: 0.5em 0em;
+        
+    }
+
+    #h3-reseaux {
+        margin-bottom: 0.5em;
     }
 
     /* Accueil section 1 mobile */
