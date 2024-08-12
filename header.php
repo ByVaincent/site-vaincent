@@ -2,7 +2,7 @@
 
     <div class="header-nav">
 
-        <a href="index.html">
+        <a href="index.php">
             <img id="logo" src="img/logo-vaincent-ecriture.png" alt="Logo de Vaincent">
             <img id="logo-mobile" src="img/logo-vaincent-mobile.png" alt="Logo de Vaincent">
         </a>

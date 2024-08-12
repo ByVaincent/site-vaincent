@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "HopperScript" ;
+    src: url(polices/HopperScript.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +12,8 @@
 body {
     background-color: #00031C;
     color: white;
-    font-family: "Red Hat Display";
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 100;
     display: flex;
     justify-content: center;
     width: 100%; 
@@ -49,6 +55,7 @@ section {
 
 h1 {
     text-align: center;
+    font-weight: 100;
 }
 
 h2 {
@@ -72,6 +79,9 @@ a {
     color: white;
 }
 
+.hopper-font {
+    font-family: "HopperScript", "Nunito Sans", sans-serif;
+}
 
 /* Header */
 
@@ -249,6 +259,7 @@ padding: 0em 1.5em;
 
 /* Page d'accueil */
 
+
 .accueil-section-1 {
     
     background: url(img/page-accueil-fond.jpg) no-repeat ;
@@ -293,8 +304,15 @@ padding: 0em 1.5em;
 
 .accueil-texte h1 {
 
-    font-size: 3em;
+    font-size: 5em;
     margin-bottom: 0.5em;
+    word-spacing: 0em;
+}
+
+.tenor-h1{
+
+    font-size: 0.5em;
+    word-spacing: 0.5em;
 }
 
 .accueil-texte p {
@@ -554,7 +572,7 @@ padding: 0em 1.5em;
     .accueil-texte-responsive h1{
 
         margin: 1em 0em;
-        font-size: 2em;
+        font-size: 3em;
     }
 
     #logo-page-accueil {
@@ -760,8 +778,8 @@ padding: 0em 1.5em;
 
     .accueil-texte-responsive-mobile-texte h1{
 
-        margin: 0em 0em 1em 0em;
-        font-size: 2em;
+        margin: 0em 0em 0.5em 0em;
+        font-size: 3em;
     }
 
     .accueil-texte-responsive-mobile-texte {

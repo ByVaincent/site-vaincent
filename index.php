@@ -37,7 +37,7 @@
                 <figure>
                     <img src="img/logo-vaincent-ecriture.png" alt="Logo de Vaincent" id="logo-page-accueil">
                 </figure>
-                <h1>Ténor Opéra - Pop</h1>
+                <h1><span class="tenor-h1">Ténor </span> <span class="hopper-font"> Opéra</span> Pop</h1>
 
                 <p>Vainqueur du concours Georges Enesco 2023 (catégorie grands amateurs)</p>
                 <p>Vainqueur du concours Les Cordes Aux Voix 2022</p>
@@ -53,7 +53,7 @@
                 </figure>
 
 
-                <h1>Ténor Opéra - Pop</h1>
+                <h1><span class="tenor-h1">Ténor </span> <span class="hopper-font">Opéra </span>Pop</h1>
 
                 <p>Vainqueur du concours Georges Enesco 2023 (catégorie grands amateurs)</p>
                 <p>Vainqueur du concours Les Cordes Aux Voix 2022</p>
@@ -80,7 +80,7 @@
         
         <div class="accueil-texte-responsive-mobile-texte">
 
-            <h1>Ténor Opéra - Pop</h1>
+            <h1><span class="tenor-h1">Ténor </span> <span class="hopper-font">  Opéra</span> Pop</h1>
 
             <p>Vainqueur du concours Georges Enesco 2023 (catégorie grands amateurs)</p>
             <p>Vainqueur du concours Les Cordes Aux Voix 2022</p>
