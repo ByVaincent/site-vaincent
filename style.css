@@ -43,6 +43,7 @@ section {
     justify-content: center;
     margin: 0em 2em;
     width: 100%;
+    padding: 1em 0em;
 }
 
 
@@ -228,6 +229,24 @@ padding: 0em 1.5em;
     margin-bottom: 1em;
 }
 
+.section-footer-2 {
+
+    background: #000000;   
+}
+
+.section-footer-2 a {
+
+    color: rgba(225, 225, 225, 0.2);
+    text-decoration: none;
+    margin: 0em 2em;
+    transition: all 0.3s ease;
+}
+
+.section-footer-2 a:hover {
+
+    color: rgba(225, 225, 225, 0.7);
+}
+
 /* Page d'accueil */
 
 .accueil-section-1 {
@@ -364,17 +383,58 @@ padding: 0em 1.5em;
 
 .container-biographie {
     
-    background: radial-gradient(ellipse at center, #00073F, #000000);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin-top: 5%;
+    background-image: url(img/biographie-fond.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 100vh;
     
 }
 
+.container-biographie h1 {
 
+    margin: 10% 0% 4% 0%;
+    
+}
+
+.container-biographie p {
+    
+    text-align: justify;
+    padding: 0.5em;
+    background-color: rgba(00, 00, 00, 0.1);
+}
+
+.container-biographie article {
+
+    max-width: 50%;
+    margin-left: 40%;
+}
+
+/* Page mentions légales */
+
+.section-mentions-legales {
+    padding-bottom: 5%;
+}
+
+.container-mentions-legales {
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.container-mentions-legales h1 {
+
+    margin: 10% 0% 2% 0%;
+}
+
+.container-mentions-legales h2 {
+
+    margin: 2em 0em 0.5em 0em ;
+    font-size: 1.2em;
+   
+}
 
 /* Médias queries */
 
@@ -407,7 +467,8 @@ padding: 0em 1.5em;
     .burger-in-use {
        
         margin: 0px 0px;
-        transition: all 0.3s ease;
+        background-color: #AEA05A;
+        
 
     }
 
@@ -427,10 +488,16 @@ padding: 0em 1.5em;
         max-width: 1500px;
         margin: auto;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0em 2em;
+    }
+
+    /* Footer tablette */
+
+    #h3-reseaux {
+        margin-top: 2em;
     }
 
     /* Accueil section 1 tablette */
@@ -518,6 +585,18 @@ padding: 0em 1.5em;
     justify-content: center;
 }
 
+
+/* Biographie tablette */
+.section-biographie {
+
+    padding-top: 10%;
+}
+
+.container-biographie{
+    justify-content: start;
+    height: auto;
+}
+
 }
 /* Mobiles */
 
@@ -587,28 +666,41 @@ padding: 0em 1.5em;
         max-width: 1500px;
         margin: auto;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2em 0.2em;
+        padding: 1em 0.2em;
+    }
+
+    .column-reverse {
+
+        flex-direction: column-reverse;
     }
 
     /* Footer mobile */
 
-    .section-footer div {
-        margin: 5% 0%;
-    }
-    
-    
-    .container-footer-mobile {
+    .section-footer {
 
-        margin: 0.5em 0em;
-        
+        margin: 0em;
     }
+
+    #h3-reseaux {
+        
+        margin-top: 2em;
+    }
+    
 
     #h3-reseaux {
         margin-bottom: 0.5em;
     }
+
+    .section-footer-2 a {
+
+        color: rgba(225, 225, 225, 0.2);
+        text-decoration: none;
+        margin: 0.5em 2em;
+    }
+
 
     /* Accueil section 1 mobile */
 
@@ -694,6 +786,7 @@ padding: 0em 1.5em;
 
 
         /* Accueil section 2 mobile */
+      
 
 .accueil-video div iframe {
 
@@ -717,5 +810,26 @@ padding: 0em 1.5em;
         border-top: #00073F 1px solid;
         border-bottom: #00073F 1px solid;
         text-align: center;
+    }
+
+    /* Biographie mobile */
+
+    .container-biographie{
+        justify-content: start;
+        margin-top: 2em;
+        height: auto;
+    }
+
+    .container-biographie article {
+
+        max-width: 80%;
+        margin-left: 0%;
+    }
+
+    .container-biographie p {
+    
+        text-align: justify;
+        padding: 0.5em;
+        background-color: rgba(00, 00, 00, 0.3);
     }
 }

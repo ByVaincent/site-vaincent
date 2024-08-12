@@ -25,3 +25,13 @@
         </div>
     </div>
 </section>
+
+<section class="section-footer-2">
+
+    <div class="container container-footer-2">
+
+        <a href="mentions-legales.php">Mentions légales</a>
+        <a href="confidentialite.php">Politique de confifentialité</a>
+
+    </div>
+</section>
