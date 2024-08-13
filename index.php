@@ -18,7 +18,7 @@
 
 
 
-<body>
+<body class="affichage-off">
 
     <main>
 

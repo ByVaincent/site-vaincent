@@ -83,6 +83,11 @@ a {
     font-family: "HopperScript", "Nunito Sans", sans-serif;
 }
 
+/* Avec script js */
+
+.affichage-off {
+    display: none;
+}
 /* Header */
 
 header{
@@ -386,14 +391,19 @@ padding: 0em 1.5em;
     
 }
 
-.tableau-concerts th,.tableau-concerts td {
+#tableau-concerts th,#tableau-concerts td {
     padding: 0.5em 2em;
     border-top: #00073F 1px solid;
     border-bottom: #00073F 1px solid;
     text-align: center;
 }
 
-.tableau-concerts {
+#tableau-concerts thead th{
+
+    border-top: none;
+}
+
+#tableau-concerts {
     border-collapse: collapse;
 }
 
@@ -823,7 +833,7 @@ padding: 0em 1.5em;
 
     /*  Accueil section 3 mobile */
 
-    .tableau-concerts th,.tableau-concerts td {
+    #tableau-concerts th,#tableau-concerts td {
         padding: 0.5em 0.5em;
         border-top: #00073F 1px solid;
         border-bottom: #00073F 1px solid;
