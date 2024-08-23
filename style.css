@@ -79,6 +79,10 @@ a {
     color: white;
 }
 
+.active {
+    color: #AEA05A;
+}
+
 .hopper-font {
     font-family: "HopperScript", "Nunito Sans", sans-serif;
 }
@@ -87,6 +91,7 @@ a {
 
 .affichage-off {
     display: none;
+    
 }
 /* Header */
 
@@ -100,6 +105,7 @@ header{
     flex-direction: column;
     align-items: center;
     z-index: 100;
+    height: 80px;
 
     
 }
@@ -112,6 +118,7 @@ header{
     align-items: center;
     padding:0.5em 1.5em 0em 1.5em;
     width: 100%; 
+    height: 80px;
 }
 
 .container-menu-mobile {
@@ -462,6 +469,22 @@ padding: 0em 1.5em;
     margin: 2em 0em 0.5em 0em ;
     font-size: 1.2em;
    
+}
+
+/* Page concerts */
+
+#correction-page-concerts{
+    
+    width: 100%;
+    max-width: 1920px;
+    height: 70vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AEA05A;
+    padding: 0em 0em 3em 0em;
+
 }
 
 /* Médias queries */

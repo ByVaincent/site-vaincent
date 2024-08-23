@@ -21,7 +21,7 @@
             <li><a href="biographie.php">Biographie</a></li>
             <li><a href="au-jour-le-jour.php">Au jour le jour</a></li>
             <li><a href="concerts.php">Concerts</a></li>
-            <li><a href="evenements-privés.php">Événements privés</a></li>
+            <!-- <li><a href="evenements-privés.php">Événements privés</a></li> -->
             <li><a href="contact.php">Contact</a></li>
         </ul>
 
