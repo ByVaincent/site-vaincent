@@ -89,6 +89,10 @@ a {
 .affichage-off {
     display: none;
 }
+
+.active {
+    color: #AEA05A;
+}
 /* Header */
 
 header{
