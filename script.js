@@ -104,3 +104,29 @@ fetch (urlDatesConcerts)
     })
     
 
+
+
+
+
+    //Gestion de la couleur du lien de navigation
+
+    const lienDeNavigation = document.querySelectorAll(".header-nav ul li a");
+    const lienDeNavigationMobile = document.querySelectorAll(".container-menu-mobile ul li a");
+
+    const URLEnCours = window.location.href;
+
+    lienDeNavigation.forEach(lien => {
+
+        if(lien.href === URLEnCours) {
+
+            lien.classList.add('active');
+        }
+    })
+
+    lienDeNavigationMobile.forEach(lien =>{
+
+        if (lien.href === URLEnCours){
+
+            lien.classList.add('active');
+        }
+    })

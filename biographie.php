@@ -32,6 +32,13 @@
                 <h1>Biographie</h1>
                 
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae labore corrupti voluptate deleniti? Reprehenderit, ut quam. Pariatur fugit neque cupiditate temporibus, dolore suscipit nesciunt, magni quas et eaque amet distinctio.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae labore corrupti voluptate deleniti? Reprehenderit, ut quam. Pariatur fugit neque cupiditate temporibus, dolore suscipit nesciunt, magni quas et eaque amet distinctio.</p>
+            
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae labore corrupti voluptate deleniti? Reprehenderit, ut quam. Pariatur fugit neque cupiditate temporibus, dolore suscipit nesciunt, magni quas et eaque amet distinctio.</p>
+            
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae labore corrupti voluptate deleniti? Reprehenderit, ut quam. Pariatur fugit neque cupiditate temporibus, dolore suscipit nesciunt, magni quas et eaque amet distinctio.</p>
+            
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae labore corrupti voluptate deleniti? Reprehenderit, ut quam. Pariatur fugit neque cupiditate temporibus, dolore suscipit nesciunt, magni quas et eaque amet distinctio.</p>
             
             </article>
 

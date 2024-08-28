@@ -56,6 +56,7 @@ section {
 h1 {
     text-align: center;
     font-weight: 100;
+    font-size: 2.5em;
 }
 
 h2 {
@@ -405,6 +406,7 @@ padding: 0em 1.5em;
 
 #tableau-concerts {
     border-collapse: collapse;
+    width: 100%;
 }
 
 /* Page Biographie */
@@ -464,7 +466,89 @@ padding: 0em 1.5em;
    
 }
 
-/* Médias queries */
+/* Page concerts */
+
+#correction-page-concerts{
+    
+    width: 100%;
+    max-width: 1920px;
+    height: 70vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AEA05A;
+    padding: 0em 0em 3em 0em;
+
+}
+
+/* Page au jour le jour */
+.au-jour-le-jour {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.au-jour-le-jour h1 {
+
+    color: #AEA05A;
+    margin-bottom: 1em;
+}
+
+.au-jour-le-jour h1 span {
+
+    margin: 0em 0.5em;
+    font-size: 1.5em;
+}
+
+.blog {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 2em 0em;
+
+}
+
+.reverse-blog {
+
+    flex-direction: row-reverse;
+}
+
+.blog img{
+
+    width: 35%;
+}
+
+.blog div {
+
+    width: 65%;
+    margin-left: 2em;
+}
+
+.blog div h2 {
+
+    color: #AEA05A;
+}
+
+.au-jour-le-jour hr {
+
+    border: none;
+    background-color: #AEA05A;
+    opacity: 0.5;
+    width: 50%;
+    height: 1px;
+    margin: 2em 0em;
+}
+
+
+/*/////////////////////////////
+         Médias queries 
+//////////////////////////////*/
 
 @media (min-width: 600px) and (max-width: 1000px) {
 
@@ -623,9 +707,49 @@ padding: 0em 1.5em;
 .container-biographie{
     justify-content: start;
     height: auto;
+    padding-bottom: 20%;
 }
 
+
+/* Au jour le jour tablette */
+
+.blog {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2em 0em;
+
 }
+
+.blog img{
+
+    width: 80%;
+    margin-bottom: 1.5em;
+}
+
+.blog div {
+
+    width: 90%;
+    margin-left: 0em;
+}
+
+.au-jour-le-jour h1 {
+
+    color: #AEA05A;
+    margin-bottom: 0em;
+}
+
+.au-jour-le-jour h1 span {
+
+    margin: 0em 0.5em;
+    font-size: 1.5em;
+}
+}
+
+
 /* Mobiles */
 
 @media (max-width: 600px){
@@ -674,6 +798,7 @@ padding: 0em 1.5em;
        
         margin: 0px 0px;
         transition: all 0.3s ease;
+        background-color: #AEA05A;
 
     }
 
@@ -784,6 +909,8 @@ padding: 0em 1.5em;
 
         margin: 0.3em 0em;
         text-align: center;
+        width: 95%;
+        opacity: 0.7;
     }
 
     .accueil-texte-responsive-mobile-texte h1{
@@ -846,11 +973,13 @@ padding: 0em 1.5em;
         justify-content: start;
         margin-top: 2em;
         height: auto;
+        background-position: center;
     }
+
 
     .container-biographie article {
 
-        max-width: 80%;
+        max-width: 95%;
         margin-left: 0%;
     }
 
@@ -859,5 +988,43 @@ padding: 0em 1.5em;
         text-align: justify;
         padding: 0.5em;
         background-color: rgba(00, 00, 00, 0.3);
+    }
+
+    /* Au jour le jour mobile */
+
+    .blog {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 2em 0em;
+    
+    }
+    
+    .blog img{
+    
+        width: 80%;
+        margin-bottom: 1.5em;
+    }
+    
+    .blog div {
+    
+        width: 90%;
+        margin-left: 0em;
+    }
+    
+    .au-jour-le-jour h1 {
+    
+        color: #AEA05A;
+        margin-bottom: 0em;
+        font-size: 2em;
+    }
+    
+    .au-jour-le-jour h1 span {
+    
+        margin: 0em 0.3em;
+        font-size: 1.5em;
     }
 }
