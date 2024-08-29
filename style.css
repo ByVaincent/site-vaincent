@@ -531,7 +531,7 @@ padding: 0em 1.5em;
 .blog div {
 
     width: 65%;
-    margin-left: 2em;
+    margin: 0em 2em;
 }
 
 .blog div h2 {
@@ -549,6 +549,11 @@ padding: 0em 1.5em;
     margin: 2em 0em;
 }
 
+.date {
+
+    margin-top: 1em;
+    text-align: end;
+}
 
 /*/////////////////////////////
          Médias queries 

@@ -1,0 +1,41 @@
+[
+    {
+        "src": "img/photo-blog-test.jpg",
+        "alt": "Photo de Vaincent en mariage",
+        "titre": "Un mariage exceptionnel",
+        "paragraphe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero consequuntur iure ex ad eligendi expedita minima impedit sed voluptatem. Doloribus deleniti sequi corrupti saepe minus, autem unde commodi in.",
+        "date": "30 avril 2024"
+    },
+
+    {
+        "src": "img/biographie-fond.png",
+        "alt": "Photo de Vaincent en mariage",
+        "titre": "Un mariage exceptionnel",
+        "paragraphe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero consequuntur iure ex ad eligendi expedita minima impedit sed voluptatem. Doloribus deleniti sequi corrupti saepe minus, autem unde commodi in.",
+        "date": "31 avril 2024"
+    },
+
+    {
+        "src": "img/biographie-fond.png",
+        "alt": "Photo de Vaincent en mariage",
+        "titre": "Un mariage exceptionnel",
+        "paragraphe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero consequuntur iure ex ad eligendi expedita minima impedit sed voluptatem. Doloribus deleniti sequi corrupti saepe minus, autem unde commodi in.",
+        "date": "32 avril 2024"
+    },
+
+    {
+        "src": "img/biographie-fond.png",
+        "alt": "Photo de Vaincent en mariage",
+        "titre": "Un mariage exceptionnel",
+        "paragraphe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero consequuntur iure ex ad eligendi expedita minima impedit sed voluptatem. Doloribus deleniti sequi corrupti saepe minus, autem unde commodi in.",
+        "date": "33 avril 2024"
+    },
+
+    {
+        "src": "img/biographie-fond.png",
+        "alt": "Photo de Vaincent en mariage",
+        "titre": "Un mariage exceptionnel",
+        "paragraphe": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero consequuntur iure ex ad eligendi expedita minima impedit sed voluptatem. Doloribus deleniti sequi corrupti saepe minus, autem unde commodi in.",
+        "date": "30 avril 2024"
+    }
+]

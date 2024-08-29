@@ -1,14 +1,4 @@
 
-// Attente du chargement complet de la page avant de l'afficher
-
-window.onload = () => {
-    const bodyElement = document.querySelector("body")
-
-    bodyElement.classList.toggle("affichage-off")
-
-}
-
-
 //  Affichage / masquage menu mobile
 
 
@@ -26,6 +16,29 @@ hamburgerMenuElement.addEventListener("click", function() {
     }
 
 });
+
+//Gestion de la couleur du lien de navigation
+
+const lienDeNavigation = document.querySelectorAll(".header-nav ul li a");
+const lienDeNavigationMobile = document.querySelectorAll(".container-menu-mobile ul li a");
+
+const URLEnCours = window.location.href;
+
+lienDeNavigation.forEach(lien => {
+
+    if(lien.href === URLEnCours) {
+
+        lien.classList.add('active');
+    }
+})
+    //Version mobile
+lienDeNavigationMobile.forEach(lien =>{
+
+    if (lien.href === URLEnCours){
+
+        lien.classList.add('active');
+    }
+})
 
 
 // Traitement et affichage de l'agenda des concerts
@@ -101,32 +114,87 @@ fetch (urlDatesConcerts)
 
     .catch(error => {
         console.error('Il y a eu une erreur dans la récupération du fichier de concert: ', error)
-    })
+    });
     
 
+// Traitement de l'affichage des articles dans la page au jour le jour
 
+const urlArticles = "articles-blog.json";
 
-
-
-    //Gestion de la couleur du lien de navigation
-
-    const lienDeNavigation = document.querySelectorAll(".header-nav ul li a");
-    const lienDeNavigationMobile = document.querySelectorAll(".container-menu-mobile ul li a");
-
-    const URLEnCours = window.location.href;
-
-    lienDeNavigation.forEach(lien => {
-
-        if(lien.href === URLEnCours) {
-
-            lien.classList.add('active');
+fetch (urlArticles)
+    .then (reponse => {
+        if (!reponse.ok){
+            throw new Erreur ('Le fichier articles-blog.json n\'a pas pu être trouvé: ', reponse.statusText );
         }
+        return reponse.json()
     })
 
-    lienDeNavigationMobile.forEach(lien =>{
+    .then (articlesBlog => {
 
-        if (lien.href === URLEnCours){
+        nbreArticlesAffiches = 4;
 
-            lien.classList.add('active');
+        for(let i = 0; i < nbreArticlesAffiches; i++ ){
+
+        const article = articlesBlog[i];
+
+        //Création des element    
+        const articleElement = document.createElement('article');
+        articleElement.classList = 'blog';
+        const divArticleElement = document.createElement('div');
+        const imageElement = document.createElement('img');
+        const titreElement = document.createElement('h2');
+        const paragrapheElement = document.createElement('p');
+        const dateElement = document.createElement('p');
+        const hrElement = document.createElement('hr');
+
+        const sectionArticleInsertion = document.querySelector('.au-jour-le-jour');
+
+        //Insertion des balises et de leur contenu
+
+        sectionArticleInsertion.appendChild(articleElement);
+
+        articleElement.appendChild(imageElement);
+        imageElement.src = article["src"];
+        imageElement.alt = article["alt"];
+
+        articleElement.appendChild(divArticleElement);
+
+        divArticleElement.appendChild(titreElement);
+        titreElement.innerHTML = article["titre"];
+
+        divArticleElement.appendChild(paragrapheElement);
+        paragrapheElement.innerHTML = article["paragraphe"];
+
+        divArticleElement.appendChild(dateElement);
+        dateElement.innerHTML = article["date"];
+
+        if (i !== nbreArticlesAffiches - 1){
+
+            sectionArticleInsertion.appendChild(hrElement);
         }
+
+        // Ajour de la class reverse-blog pour affichage grand ecran
+        
+        if (i % 2 === 1){
+            articleElement.classList.add("reverse-blog");
+        }
+
+        console.log(i%2)
+
+
+        
+
+
+
+        }
+           
+
     })
+
+    .catch(error => {
+        console.error('Il y a eu une erreur dans la récupération du fichier d: ', error)
+    });
+
+
+
+
