@@ -201,8 +201,32 @@ fetch (urlArticles)
 
 const photosTitleElement = document.getElementById("photos-title");
 const videosTitleElement = document.getElementById("videos-title");
+const sectionMediasElement = document.querySelector(".medias");
 
 photosTitleElement.addEventListener('click', () => {
     const photosGridElement = document.querySelector(".photos-grid");
-    photosGridElement.classList.toggle("full-height")
+    photosGridElement.classList.toggle("full-height");
+    photosTitleElement.classList.toggle("active");
 })
+
+videosTitleElement.addEventListener('click', () => {
+    const videosGridElement = document.querySelector('.videos-grid');
+    videosGridElement.classList.toggle("full-height");
+    videosTitleElement.classList.toggle("active");
+})
+
+
+//Correction background section footer sur la page médias
+
+const idPageMedia = document.getElementById("page-media");
+
+if (idPageMedia !== null) {
+    const sectionFooterElement = document.querySelector(".section-footer");
+    const sectionFooter2Element = document.querySelector(".section-footer-2");
+
+    sectionFooterElement.classList.add("background-desactive");
+    sectionFooter2Element.classList.add("background-desactive");
+}
+
+console.log(idPageMedia)
+// Affichage des médias à partir d'un fichier json

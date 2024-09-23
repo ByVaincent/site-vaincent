@@ -38,7 +38,7 @@
             <li><a href="biographie.php">Biographie</a></li>
             <li><a href="au-jour-le-jour.php">Au jour le jour</a></li>
             <li><a href="concerts.php">Concerts</a></li>
-            <li><a href="Médias.php">Médias</a></li>
+            <li><a href="medias.php">Médias</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </div>

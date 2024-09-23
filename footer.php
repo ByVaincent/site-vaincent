@@ -1,4 +1,4 @@
-<section class="section-footer">
+<section class="section-footer ">
     <div class="container container-footer-mobile">
 
         <div>

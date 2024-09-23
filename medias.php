@@ -24,7 +24,7 @@
 
     <?php require "header.php" ?>
 
-    <section class="medias">
+    <section class="medias" id="page-media">
         <h1><span class="hopper-font">Médias</span></h1>
 
         <h2 id="photos-title"><span class="hopper-font">Photos</span></h2>
@@ -57,11 +57,14 @@
         <div class="videos"><iframe width="560" height="315" src="https://www.youtube.com/embed/tq9Z7S9kpu8?si=O9x6YKY9kj5Z70Ci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>    
         </div>
 
+        <?php require "footer.php" ?>
      
     </section>
+
+    
     
 
-    <?php require "footer.php" ?>
+   
     
 
 </main>
