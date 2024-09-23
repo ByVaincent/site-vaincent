@@ -1,0 +1,12 @@
+
+{"photos" : [
+    {
+        "url" : "img/photo-blog-test.jpg",
+        "alt" : "Vaincent qui chante dans un mariage"
+    }
+],
+"videos" : [
+    {
+         "url" : "https://www.youtube.com/embed/tq9Z7S9kpu8?si=O9x6YKY9kj5Z70Ci"
+    }
+]}

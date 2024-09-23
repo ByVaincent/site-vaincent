@@ -215,6 +215,51 @@ videosTitleElement.addEventListener('click', () => {
     videosTitleElement.classList.toggle("active");
 })
 
+//Affichage des médias par rapport à un fichier json
+// photos 2 clefs: url et alt, vidéos une clef:url
+
+const urlMedias = "medias.json";
+
+fetch (urlMedias)
+    .then (reponse => {
+        if (!reponse.ok){
+            throw new Erreur ('Le fichier media.json n\'a pas pu être trouvé:', reponse.statusText);    
+        }
+        return reponse.json();
+    })
+
+    .then (medias => {
+        const photos = medias["photos"];
+        
+        photos.forEach(function(photo){
+            const urlPhoto = photo["url"];
+            const altPhoto = photo["alt"];
+            
+            const divPhotosElement = document.querySelector(".photos-grid");
+            const divElement = document.createElement('div');
+            divElement.classList.add("photos");
+            divElement.innerHTML = `<a href="${urlPhoto}" target="_blank"><img src="${urlPhoto}" alt="${altPhoto}"></a>`
+            divPhotosElement.appendChild(divElement);
+        
+        })
+
+        const videos =medias["videos"];
+
+        videos.forEach(function(video){
+            const urlVideo = video["url"];
+
+            const divVideosElement = document.querySelector(".videos-grid");
+            const divElement = document.createElement("div");
+            divElement.classList.add("videos");
+            divElement.innerHTML = `<iframe width="560" height="315" src="${urlVideo}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+            divVideosElement.appendChild(divElement);
+        })
+
+    })
+    
+    .catch(error => {
+        console.error('Il y a eu une erreur dans la récupération du fichier de médias: ', error)
+    });
 
 //Correction background section footer sur la page médias
 
