@@ -197,4 +197,12 @@ fetch (urlArticles)
 
 
 
+// Gestion affichage photos et vidéos de la page média
 
+const photosTitleElement = document.getElementById("photos-title");
+const videosTitleElement = document.getElementById("videos-title");
+
+photosTitleElement.addEventListener('click', () => {
+    const photosGridElement = document.querySelector(".photos-grid");
+    photosGridElement.classList.toggle("full-height")
+})

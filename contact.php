@@ -13,6 +13,7 @@
     <?php require "font.php" ?>
     
     <script src="script.js" defer></script>
+    <script src="form.js" defer></script>
     
 </head>
 
@@ -35,28 +36,28 @@
 
     </div>
 
-    <form action="form.js" method="post">
+    <form action="form.php" method="post">
 
         <h2>Par mail:</h2>
 
         <div>
 
-            <label for="first-name">Nom:</label>
-            <input type="text" id="first-name" name="firstname">
+            <label for="first-name">Prénom:</label>
+            <input type="text" id="first-name" name="firstname" required pattern="^[^<> ]+$" maxlength="30">
 
-            <label for="name" id="label-name">Prénom:</label>
-            <input type="text" id="name" name="name">
+            <label for="name" id="label-name">Nom:</label>
+            <input type="text" id="name" name="name" required pattern="^[^<> ]+$" maxlength="30">
 
         </div>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" maxlength="50">
 
         <label for="subject">Sujet:</label>
-        <input type="text" id="subject" name="subject">
+        <input type="text" id="subject" name="subject" required pattern="^[^\s<>\/\\\\]+$" maxlength="50">
 
         <label for="message">Votre message:</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" maxlength="500" required pattern="^[^\s][^<>\/\\\\]+$"></textarea>
 
         <input type="submit" value="Envoyer">
 
